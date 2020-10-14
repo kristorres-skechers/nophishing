@@ -1,0 +1,45 @@
+@import "./themes/skechers.scss";
+
+@import "@material/theme/mdc-theme";
+@import "@material/elevation/mdc-elevation";
+@import "@material/typography/mdc-typography";
+
+$link-hover: #777777;
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $link-hover;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: $link-hover;
+}
+
+a:active {
+    color: $link-hover;
+}
+
+.material-icons {
+    font-size: 1rem;
+    vertical-align: text-bottom;
+}
+
+.hello-world {
+    padding: 48px 24px;
+}
+
+.hello-world h1 {
+    text-align: center;
+}
+
+footer {
+    padding: 8px 80px;
+    p {
+        margin: 0;
+    }
+}
