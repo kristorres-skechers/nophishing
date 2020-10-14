@@ -1,17 +1,18 @@
 import React from "react";
 
 import FlexBox from "./FlexBox.js";
+import SignIn from "./views/SignIn.js";
 
 function HelloWorld() {
     return (
         <FlexBox
             component="main"
             level={1}
-            justifyContent="center"
+            justifyContent="flex-start"
             alignItems="center"
             className="mdc-theme--background hello-world"
         >
-            <h1 className="mdc-typography--headline1">Hello, world!</h1>
+            <SignIn/>
         </FlexBox>
     );
 }

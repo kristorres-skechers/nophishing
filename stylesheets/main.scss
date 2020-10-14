@@ -30,11 +30,17 @@ a:active {
 }
 
 .hello-world {
-    padding: 48px 24px;
+    background-image: url("https://ok7static.oktacdn.com/fs/bco/7/fs02k98fmDOVonXOd356");
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 8px;
 }
 
-.hello-world h1 {
+.sign-in {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
     text-align: center;
+    width: 400px;
 }
 
 footer {
