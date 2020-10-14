@@ -2,6 +2,7 @@
 
 @import "@material/theme/mdc-theme";
 @import "@material/elevation/mdc-elevation";
+@import "@material/textfield/mdc-text-field";
 @import "@material/typography/mdc-typography";
 
 $link-hover: #777777;
@@ -41,6 +42,11 @@ a:active {
     border-radius: 4px;
     text-align: center;
     width: 400px;
+}
+
+.sign-in-section {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 28px;
 }
 
 footer {
