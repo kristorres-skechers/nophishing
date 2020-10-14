@@ -4,7 +4,7 @@ import React from "react";
 
 import {useComponentDidMount} from "../../hooks.js";
 
-function TextField({label, value, setValue, style}) {
+function TextField({label, value, setValue, secure, style}) {
 
     const id = label.replace(/ /g, "-").toLowerCase();
 
@@ -29,6 +29,7 @@ function TextField({label, value, setValue, style}) {
                 className="mdc-text-field__input"
                 value={value}
                 onChange={handleChange}
+                type={secure ? "password" : "text"}
             />
             <div className="mdc-notched-outline">
                 <div className="mdc-notched-outline__leading"></div>
@@ -47,10 +48,12 @@ TextField.propTypes = {
     label: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
     setValue: PropTypes.func.isRequired,
+    secure: PropTypes.bool.isRequired,
     style: PropTypes.object.isRequired
 };
 
 TextField.defaultProps = {
+    secure: false,
     style: {}
 };
 
