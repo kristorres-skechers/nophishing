@@ -24,7 +24,6 @@ function TextField({label, value, setValue, secure, style}) {
             style={style}
         >
             <input
-                type="text"
                 id={id}
                 className="mdc-text-field__input"
                 value={value}
