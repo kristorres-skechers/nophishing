@@ -22,7 +22,7 @@ export default {
     plugins: [
         replace({
             "process.env.BUILD": JSON.stringify("production"),
-            "<PUBLIC DIRECTORY>": "/",
+            "<PUBLIC DIRECTORY>": "/nophishing/",
             delimiters: ["", ""]
         }),
         alias({
