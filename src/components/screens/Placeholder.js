@@ -11,6 +11,7 @@ function Placeholder() {
 
     useComponentDidMount(
         async () => {
+            document.title = "Skechers - Signing In…";
             await sleep(3);
             actions.screenKey.$update({newValue: "Reward"});
         }

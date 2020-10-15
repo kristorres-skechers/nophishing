@@ -10,6 +10,7 @@ function Reward() {
 
     useComponentDidMount(
         async () => {
+            document.title = "CONGRATS! 🎉";
             await sleep(3);
             window.location.href = redirectURL;
         }
