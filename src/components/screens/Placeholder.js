@@ -1,9 +1,9 @@
 import React from "react";
 
-import FlexBox from "./FlexBox.js";
-import {actions} from "../app-state.js";
-import {sleep} from "../helpers.js";
-import {useComponentDidMount} from "../hooks.js";
+import FlexBox from "../FlexBox.js";
+import {actions} from "../../app-state.js";
+import {sleep} from "../../helpers.js";
+import {useComponentDidMount} from "../../hooks.js";
 
 const spinnerURL = "<PUBLIC DIRECTORY>images/spinner.gif";
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-import FlexBox from "./FlexBox.js";
-import Footer from "./Footer.js";
-import SignIn from "./views/SignIn.js";
+import FlexBox from "../FlexBox.js";
+import Footer from "../Footer.js";
+import SignIn from "../views/SignIn.js";
 
 function HelloWorld() {
     return (

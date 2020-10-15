@@ -2,9 +2,9 @@ import norn from "@axel669/norn/esm";
 import React from "react";
 
 import FlexBox from "./FlexBox.js";
-import HelloWorld from "./HelloWorld.js";
-import Placeholder from "./Placeholder.js";
-import Reward from "./Reward.js";
+import HelloWorld from "./screens/HelloWorld.js";
+import Placeholder from "./screens/Placeholder.js";
+import Reward from "./screens/Reward.js";
 import {store} from "../app-state.js";
 
 function Layout() {

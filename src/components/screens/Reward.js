@@ -1,8 +1,8 @@
 import React from "react";
 
-import FlexBox from "./FlexBox.js";
-import {sleep} from "../helpers.js";
-import {useComponentDidMount} from "../hooks.js";
+import FlexBox from "../FlexBox.js";
+import {sleep} from "../../helpers.js";
+import {useComponentDidMount} from "../../hooks.js";
 
 const redirectURL = "https://www.youtube.com/watch?v=mH0_XpSHkZo";
 
