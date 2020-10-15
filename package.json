@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@axel669/norn": "^3.0.0",
     "@material/button": "^4.0.0",
     "@material/checkbox": "^4.0.0",
     "@material/form-field": "^4.0.0",
