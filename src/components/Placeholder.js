@@ -1,10 +1,21 @@
 import React from "react";
 
 import FlexBox from "./FlexBox.js";
+import {actions} from "../app-state.js";
+import {sleep} from "../helpers.js";
+import {useComponentDidMount} from "../hooks.js";
 
 const spinnerURL = "<PUBLIC DIRECTORY>images/spinner.gif";
 
 function Placeholder() {
+
+    useComponentDidMount(
+        async () => {
+            await sleep(3);
+            actions.screenKey.$update({newValue: "Reward"});
+        }
+    );
+
     return (
         <FlexBox
             component="main"

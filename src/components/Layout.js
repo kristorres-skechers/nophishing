@@ -4,13 +4,15 @@ import React from "react";
 import FlexBox from "./FlexBox.js";
 import HelloWorld from "./HelloWorld.js";
 import Placeholder from "./Placeholder.js";
+import Reward from "./Reward.js";
 import {store} from "../app-state.js";
 
 function Layout() {
 
     const screens = {
         HelloWorld: <HelloWorld/>,
-        Placeholder: <Placeholder/>
+        Placeholder: <Placeholder/>,
+        Reward: <Reward/>
     };
 
     const {screenKey} = norn.useStore(store);
