@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import Button from "../controls/Button.js";
 import Checkbox from "../controls/Checkbox.js";
 import TextField from "../controls/TextField.js";
+import {actions} from "../../app-state.js";
 
 const styles = {
     root: {
@@ -37,6 +38,8 @@ function SignIn() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
+    const signIn = () => actions.screenKey.$update({newValue: "Placeholder"});
+
     return (
         <div className="mdc-theme--surface" style={styles.root}>
             <div style={styles.section}>
@@ -62,7 +65,7 @@ function SignIn() {
                 <Checkbox label="Remember me" style={styles.checkbox}/>
                 <Button
                     label="Sign In"
-                    onPress={() => {}}
+                    onPress={signIn}
                     disabled={username.length === 0 || password.length === 0}
                     style={styles.button}
                 />

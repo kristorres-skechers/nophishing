@@ -2,9 +2,9 @@ import norn from "@axel669/norn/esm";
 
 const {store, actions} = norn(
     {
-        screen: {
+        screenKey: {
             initial: "HelloWorld",
-            $update: (screen, {newValue}) => newValue
+            $update: (screenKey, {newValue}) => newValue
         }
     }
 );
